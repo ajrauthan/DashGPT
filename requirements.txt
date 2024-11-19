@@ -134,3 +134,5 @@ wrapt==1.16.0
 yarl==1.9.4
 yfinance==0.2.33
 zipp==3.17.0
+google-cloud-bigquery
+db-dtypes
