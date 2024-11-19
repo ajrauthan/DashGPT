@@ -22,19 +22,19 @@ logging.basicConfig(
 )
 
 # Set the GOOGLE_APPLICATION_CREDENTIALS environment variable 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/aishwarya.rauthan/Documents/RAG Project/qst843-ajr-41ab4b30a217.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google-cloud.json"
 
 chat_history = []
 
 # Define the path to the OpenAI credentials JSON file
-openai_creds_path = "/Users/aishwarya.rauthan/Documents/RAG Project/open_api_creds.json"
+openai_creds_path = "open_api_creds.json"
 
 # Load the OpenAI API key from the JSON file
 with open(openai_creds_path, 'r') as f:
     openai_credentials = json.load(f)
 
 # Set the OpenAI API key
-openai.api_key = openai_credentials["openai_api_key"]
+openai.api_key = openai_credentials["api_key"]
 
 client_llm = openai.OpenAI(api_key=openai.api_key)
 
