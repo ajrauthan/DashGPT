@@ -12,7 +12,7 @@ The application can be customized through the `config.yaml` file in the main dir
 # Example configuration options
 openai:
   model: "gpt-4.1"        # Choose your OpenAI model
-  max_tokens: 1000        # Adjust token limit
+  max_tokens: 10000        # Adjust token limit
   temperature: 0.2        # Control response randomness
 
 bigquery:
@@ -56,6 +56,10 @@ Modify these settings according to your needs before running the application. Th
 7. Configure the application by editing `config.yaml` according to your needs
 8. Run the script: `python Dash_app_BQ_genGraph.py`
 9. A link will be generated upon execution—click on it to access the Dash interface and start using the application.
+
+### Dashboard Preview
+
+![Dashboard Preview](styles/Dashboard.png)
 
 ### Project Structure
 
