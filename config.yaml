@@ -1,0 +1,33 @@
+# OpenAI Configuration
+# Customize your OpenAI model settings here
+openai:
+  model: "gpt-4.1"        # The OpenAI model to use
+  max_tokens: 10000       # Maximum tokens per request
+  temperature: 0.2        # Controls randomness (0-1)
+
+# BigQuery Configuration
+# Set your BigQuery project and dataset information
+bigquery:
+  project_id: "bigquery-public-data"      # Your BigQuery project ID
+  dataset_id: "san_francisco_bikeshare"   # Your dataset ID
+
+# Application Configuration
+# Customize the Dash application settings
+app:
+  debug: true            # Enable/disable debug mode
+  port: 8050            # Application port
+  host: "127.0.0.1"     # Application host
+
+# Logging Configuration
+# Configure the application logging
+logging:
+  level: "INFO"         # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  filename: "app_log.log"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+
+# Credentials Files
+# Specify the paths to your credential files
+credentials:
+  google_cloud_json: "google-cloud.json"     # Google Cloud credentials file
+  openai_creds_json: "open_api_creds.json"   # OpenAI credentials file 
