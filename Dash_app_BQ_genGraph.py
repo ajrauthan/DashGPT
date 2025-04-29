@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings('ignore', category=DeprecationWarning, message='Parsing dates involving a day of month without a year specified')
+
 import openai
 import dash
 from dash import Dash, html, dcc, Input, Output, State, callback_context
@@ -703,4 +706,4 @@ def validate_customization(customization_text, graph_code, data, chat_history, m
     return False, {}, "Failed to generate valid customization after multiple attempts"
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
